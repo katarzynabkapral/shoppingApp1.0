@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+body {
+	background-color: #d8d8d8;
+	font-size: 11px;
+	padding: 80px 0 0 0;
+}
+
+body, input, button {
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	padding: 15px;
+	top : 0;
+	left: 0;
+	z-index: 5;
+
+	background-color: #ddadad;
+	box-shadow: 0px 1px 6px ;
+  	border-bottom-right-radius: 10px;
+  	border-bottom-left-radius: 10px;
+}
+
+.noFill {
+  fill: none;
+} 
+
+header input {
+	width: 100%;
+	height: 50px;
+	font-weight: 400;
+	font-size: 18px;
+	float: left;
+	color: black;
+	text-indent: 18px;
+	padding: 0 60px 0 0;
+	background: rgba(255, 255, 255, 0.2);
+  	border-radius: 5px 25px 25px 5px;
+  	border: 0px;		
+  	box-shadow: none;
+  	outline: none;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+header input::-webkit-input-placeholder {
+  color: rgba(130, 124, 124, 0.75);
+}
+
+header input:-moz-input-placeholder {
+  color: rgba(130, 124, 124, 0.75);
+}
+
+header input::-moz-input-placeholder {
+  color: rgba(130, 124, 124, 0.75);
+}
+
+header input:-ms-input-placeholder {
+  color: rgba(130, 124, 124, 0.75);
+}
+
+header button {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 2;
+	border: 0px;
+
+ 	-webkit-appearance: none;
+ 	-moz-appearance: none;
+  
+}
+
+header button:active {
+	box-shadow: 0px 0px 3px 0px #666;
+}
+
+header button svg {
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -12px 0 0 -12px;
+}
+
+header button svg .fill {
+  fill: #ddadad;
+}
+
+
+#add {
+border-bottom-right-radius: 25px;
+border-top-right-radius: 25px;
+border-bottom-left-radius: 25px;
+border-top-left-radius: 25px;
+cursor: pointer;
+}
+
+*{margin:0;padding:0;list-style:none;box-sizing:border-box}
+ul{list-style:none}
+
+.container {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+ul.list {
+  width: 100%;
+  float: left;
+}
+
+ul.list li {
+  width: 100%;
+  min-height: 50px;
+  float: left;
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  line-height: 22px;
+
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
+  margin: 0 0 10px 0;
+  padding: 14px 100px 14px 14px;
+  word-break: break-word;
+}
+
+ul.list li .buttons {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+}
+
+ul.list li .buttons button {
+	width: 50px;
+	height: 50px;
+	float: left;
+	background: none;
+	border: 0px;
+	box-shadow: none;
+	outline: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  
+}
+
+
+ul.list li .buttons button svg {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -15px 0 0 -15px;
+}
+
+ul.list li .buttons button svg .fill {
+  transition: fill 0.2s ease;
+}
+
+ul.list li .buttons button.remove svg .fill {
+  fill: #666768;
+}
+
+ul.list li .buttons button.remove:hover svg .fill {
+  fill: #e85656;
+}
+
+ul.list#list:empty:before {
+  content: 'I have nothing to buy!';
+  margin: 15px 0 0 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
