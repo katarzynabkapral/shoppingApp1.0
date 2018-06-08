@@ -1,6 +1,6 @@
 # shoppingApp1.0
 my first shopping app based on @themaxsandelin tutorial
 
-HTML, CSS, JavaScript
+<b>HTML, CSS, JavaScript</b>
 
 https://katarzynabkapral.github.io/shoppingApp1.0/
